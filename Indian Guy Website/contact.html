@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts imported from Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!--Import some icons from font awesome-->
+    <script src="https://kit.fontawesome.com/63537c564c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="sub-header">
+
+        <!--Navigation bar section-->
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- Id is for the Javascript getElementById-->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!--Import Close icon here. Also, a simple function to close the menu-->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- Import a Menu icon here-->
+        </nav>
+        <h1>Contact Us</h1>
+    </div>
+
+
+    <!-------------------------Contact Us-------------------------------------->
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6568441499703!2d103.85970891400858!3d1.3825369989916845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16f35312f4db%3A0xdc4e04d6a6b8e924!2s5%20Mimosa%20Walk%2C%20Singapore%20807860!5e0!3m2!1sen!2ssg!4v1634401327624!5m2!1sen!2ssg"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <section class="contact us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Bangalore, Karnataka, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+65 82015596</h5>
+                        <p>Monday to Saturday, 10am to 6pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5>info@easytutorialspro.com</h5>
+                        <p>Email us your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class ="contact-col">
+                <form class = "contact-form" action="">
+                    <input type = "text" placeholder="Enter your name">
+                    <input type = "email" placeholder="Enter email address">
+                    <input type = "text" placeholder="Enter your subject">
+                    <textarea rows = "5" placeholder="Message"></textarea>
+                    <button type = "submit" class = "button red-button">Send Message</button>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!--------Footer--------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates alias eveniet tenetur nulla animi rem
+            ipsa laudantium molestias modi?</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fas fa-heart"></i> by Easy Tutorials </p>
+    </section>
+
+
+
+
+
+
+    <!--Javascript For the TOggle Menu on Mobile-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
